@@ -20,7 +20,7 @@ export const IndexPageTemplate = ({
       <Particles
         width="100%"
         height="35vh"
-        style={{ backgroundColor: 'rgb(255, 68, 0)' }}
+        style={{ backgroundColor: '#000' }}
         params={{
           particles: {
             color: {
@@ -29,7 +29,13 @@ export const IndexPageTemplate = ({
             line_linked: {
               enable: true,
               color: "#FFF",
-              opacity: 0.5
+              opacity: 0.5,
+              width: 2,
+              shadow: {
+                enable: true,
+                color: "#FFF",
+                blur: 2
+              }
             }
           },
           interactivity: {
@@ -74,7 +80,7 @@ export const IndexPageTemplate = ({
               // boxShadow:
               //   'rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px',
               // backgroundColor: 'rgb(255, 68, 0)',
-              color: 'white',
+              color: 'rgb(255, 68, 0)',
               lineHeight: '1',
               padding: '0.25em',
             }}
